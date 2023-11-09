@@ -1,0 +1,60 @@
+.header
+    position: relative
+    z-index: 1
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 10px
+    &__soon
+        font-size: clamp(14px, 1.9vw, 36px)
+        display: inline-block
+        padding: 18px 33px 13px
+        background-color: $second
+        font-weight: 700
+        border-radius: 0 0 15px 15px
+        color: $prime
+        @media screen and ( max-width: 1600px )
+            padding: 13px 24px 9px
+        @media screen and ( max-width: 1200px )
+            padding: 10px 19px 6px
+            border-radius: 0 0 8px 8px
+
+    .logo
+        display: none
+
+    &__descr
+        font-size: 24px
+        font-size: clamp(12px, 1.25vw, 24px)
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        text-transform: uppercase
+        color: #9900CC
+        &::before
+            content: ''
+            display: inline-block
+            width: 535px
+            max-width: 30vw
+            height: 2px
+            margin-right: 40px
+            vertical-align: middle
+            background-image: url('../img/line.svg')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center right
+
+            @media screen and ( max-width: 1200px )
+                margin-right: 22px
+
+    @media screen and ( max-width: 800px )
+        flex-direction: column
+        align-items: center
+        gap: 14px
+        .logo
+            display: block
+        &__soon
+
+        &__descr
+            &::before
+                display: none

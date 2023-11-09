@@ -1,0 +1,45 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+
+$prime: #9900CC
+$second: #FFB700
+
+body
+    min-height: 100vh
+    color: #fff
+    font-size: 14px
+    background-color: #000
+    font-family: 'Circe Rounded', sans-serif
+    scroll-behavior: smooth
+    position: relative
+    z-index: 1
+
+    &.active
+        overflow: hidden
+
+p
+    font-size: 18px
+    line-height: 130%
+
+img
+    max-width: 100%
+
+a,
+button
+    color: #fff
+    text-decoration: none
+    transition: all ease .3s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+    &:hover
+        opacity: .8
+
+mark
+    background: transparent
+    color: #000
